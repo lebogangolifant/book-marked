@@ -1,5 +1,5 @@
 // container
-.form-container {
+.pages-container {
     max-width: $max-width;
     margin: auto;
     overflow: hidden;
@@ -27,6 +27,11 @@
 
 .text-primary {
     color: $primary-color;
+}
+
+// profile images
+.round-img {
+    border-radius: 50%;
 }
 
 //background
