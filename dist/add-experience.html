@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Books Collection</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <!-- font awesome kit -->
+    <script src="https://kit.fontawesome.com/bcdb4329ce.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Spartan&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- start end of page content container -->
+    <div class="container">
+
+        <!-- header section -->
+        <header class="header-wrapper bg-dark">
+            <!-- brand logo -->
+            <div class="brand-logo-left">
+                <div class="brand-logo-wrapper">
+                    <a href="dashboard.html">
+                        <i class="fas fa-book-reader"></i>
+                    </a>
+                    <!--<img src="../img/brand-logo.png" alt="book stack"><div>Icons made by <a href="https://www.flaticon.com/authors/payungkead" title="Payungkead">Payungkead</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>-->
+                    <!-- Icons made by <a href="https://www.flaticon.com/authors/payungkead" title="Payungkead">Payungkead</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>-->
+                </div>
+            </div>
+
+            <!-- header nav links -->
+            <nav class="nav-wrapper">
+                <div class="nav-link-right">
+                    <div class="nav-link-wrapper">
+                        <a href="user.html">
+                            <i class="fas fa-book"> </i> Read
+                        </a>
+                    </div>
+                    <div class="nav-link-wrapper">
+                        <a href="post.html">
+                            <i class="fas fa-boo"> </i>Post
+                        </a>
+                    </div>
+                    <div class="nav-link-wrapper">
+                        <a href="dashboard.html">
+                            <i class="fas fa-user"> </i> Dashboard
+                        </a>
+                    </div>
+                    <div class="nav-link-wrapper">
+                        <a href="dashboard.html">
+                            <i class="fas fa-sign-out-alt"> </i> Logout
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- profile section -->
+        <section class="pages-container">
+            <h1 class="large text-primary">
+                Add An Experience
+              </h1>
+              <p class="lead">
+                <i class="fas fa-code-branch"></i> Add any developer/programming
+                positions that you have had in the past
+              </p>
+              <small>* = required field</small>
+              <form class="form">
+                <div class="form-group">
+                  <input type="text" placeholder="* Job Title" name="title" required />
+                </div>
+                <div class="form-group">
+                  <input type="text" placeholder="* Company" name="company" required />
+                </div>
+                <div class="form-group">
+                  <input type="text" placeholder="Location" name="location" />
+                </div>
+                <div class="form-group">
+                  <h4>From Date</h4>
+                  <input type="date" name="from" />
+                </div>
+                <div class="form-group">
+                  <h4>To Date</h4>
+                  <input type="date" name="to" />
+                </div>
+                <div class="form-group">
+                  <p><input type="checkbox" name="current" value="" /> Current Job</p>
+                </div>
+                <div class="form-group">
+                  <textarea
+                    name="description"
+                    cols="30"
+                    rows="5"
+                    placeholder="Job Description"
+                  ></textarea>
+                </div>
+                <input type="submit" class="btn btn-primary my-1" />
+                <a class="btn my-1" href="dashboard.html">Go Back</a>
+              </form>
+        </section>
+        <!-- end of page content container -->
+</body>
+</html>
