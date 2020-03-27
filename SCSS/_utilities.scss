@@ -4,7 +4,7 @@
     margin: auto;
     overflow: hidden;
     padding: 0 2rem;
-    margin: 6rem 0 3rem 0;
+    margin: 6rem auto 3rem auto;
 }
 // text styles 
 .x-large {
@@ -48,7 +48,7 @@
 
     &-light {
         @include set-background($light-color);
-        border: 1px solid #000;
+        border: #ccc 1px solid;
     }
 
     &-dark {
@@ -65,26 +65,22 @@
 
     &-white {
         @include set-background(#fff);
-        border: 1px solid #000;
+        border: #ccc 1px solid;
     }
 }
 
-//buttons
-.banner-action-btn-link {
-    display: inline-block;
-    background: $light-color;
-    margin-right: 0.5rem;
-    padding: 0.4rem 1.3rem;
-
-    .btn {
-        color: #fff;
-        font-size: 1rem;
-        text-decoration: none;
-        border: none;
-        cursor: pointer;
-        outline: none;
-        transition: all 2.2s ease-in;
-    }
+//buttons banner-action-btn-link
+.btn {
+  display: inline-block;
+  background: $light-color;
+  color: #333;
+  padding: 0.4rem 1.3rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-right: 0.5rem;
+  outline: none;
+  transition: all 0.2s ease-in;
 
     &.btn-primary {
         @include set-background($primary-color);
@@ -130,6 +126,17 @@
     &:hover {
         background: lighten($dark-color, 20%);
         color: #fff;
+    }
+}
+
+//tables
+.table{
+    th, td{
+        padding: 1rem;
+        text-align:left;
+    }
+    th{
+        background: $light-color;
     }
 }
 
