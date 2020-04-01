@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile - Books Collection</title>
+    <title>Profile @ Book~Marked.</title>
     <link rel="stylesheet" href="css/style.min.css">
     <!-- font awesome kit -->
     <script src="https://kit.fontawesome.com/bcdb4329ce.js" crossorigin="anonymous"></script>
@@ -22,7 +22,7 @@
             <div class="brand-logo-left">
                 <div class="brand-logo-wrapper">
                     <a href="index.html">
-                        <i class="fas fa-book-reader"></i>
+                        <span>Book~Marked.</span> <i class="far fa-bookmark"></i>
                     </a>
                     <!--<img src="../img/brand-logo.png" alt="book stack"><div>Icons made by <a href="https://www.flaticon.com/authors/payungkead" title="Payungkead">Payungkead</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>-->
                     <!-- Icons made by <a href="https://www.flaticon.com/authors/payungkead" title="Payungkead">Payungkead</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>-->
@@ -34,8 +34,14 @@
                 <div class="nav-link-right">
 
                     <div class="nav-link-wrapper">
-                        <a href="user.html">
-                            <i class="fas fa-book"> </i> Read
+                        <a href="users.html">
+                            <i class="fas fa-users"> </i> Community
+                        </a>
+                    </div>
+
+                    <div class="nav-link-wrapper">
+                        <a href="dashboard.html">
+                            <i class="fas fa-user"> </i> Dashboard
                         </a>
                     </div>
 
@@ -56,16 +62,22 @@
 
         <!-- profile section -->
         <section class="pages-container">
-           <a href="user.html" class="btn">back to users</a>
+           <a href="users.html" class="btn">back to users</a>
 
            <div class="profile-grid my-1">
                <!-- top -->
                <div class="profile-top bg-primary p-2">
-                <img class="round-img my-1" src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=200" alt="">
+                <img style="width: 100px; height: 100px;"  class="round-img" src="img/user-2.jpg" alt="Photo by Prince Akachi on Unsplash">
 
-                <h1 class="large"> John Doe</h1>
-                <p class="lead">Fiction and No-Fiction</p>
-                <p> <i class="fa fa-map-marker"> </i> South Africa, LP</p>
+                <h1 class="large"> Jane Doe</h1>
+                <p> @read_writer</p>
+                <div style="display: inline;" class="profile-list">
+                    <a style="color: black;" href="">projects</a>
+                    <a style="color: black;" href="">bookList</a>
+                    <a style="color: black;" href="">following</a>
+                    
+                </div>
+               
                 <div class="icons my-1">
                     <a href="#">
                         <i class="fas fa-globe fa-2x"></i>
@@ -86,7 +98,7 @@
                </div>
                <!-- about -->
                <div class="profile-about bg-light p-2">
-                   <h2 class="text-primary"> John's Bio</h2>
+                   <h2 class="text-primary"> about</h2>
                    <p>
                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id repudiandae expedita fugit cumque odit nostrum quia laudantium maiores, nobis in.
                    </p>
