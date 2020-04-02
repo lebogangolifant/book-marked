@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/bookmark.png" type="image/x-icon">
-    <title>add-experience @ Book~Marked.</title>
+    <title>add-booklist @ Book~Marked.</title>
     <link rel="stylesheet" href="css/style.min.css">
     <!-- font awesome kit -->
     <script src="https://kit.fontawesome.com/bcdb4329ce.js" crossorigin="anonymous"></script>
@@ -59,40 +59,38 @@
         <!-- profile section -->
         <section class="pages-container">
             <h1 class="large text-primary">
-                Add An Experience
+                Add Your Book List
               </h1>
               <p class="lead">
-                <i class="fas fa-code-branch"></i> Add any developer/programming
-                positions that you have had in the past
+                <i class="fas fa-book"></i> That you read/ want to read, bookmarked etc
               </p>
               <small>* = required field</small>
               <form class="form">
                 <div class="form-group">
-                  <input type="text" placeholder="* Job Title" name="title" required />
+                  <input
+                    type="text"
+                    placeholder="* Book Title"
+                    name="booktitle"
+                    required
+                  />
                 </div>
                 <div class="form-group">
-                  <input type="text" placeholder="* Company" name="company" required />
+                  <label for="img">select image:</label>
+                  <input
+                    type="file"
+                    placeholder="* Upload Image"
+                    name="img"
+                    accept="img/*"
+                  />
+                  <input type="submit">
                 </div>
-                <div class="form-group">
-                  <input type="text" placeholder="Location" name="location" />
-                </div>
-                <div class="form-group">
-                  <h4>From Date</h4>
-                  <input type="date" name="from" />
-                </div>
-                <div class="form-group">
-                  <h4>To Date</h4>
-                  <input type="date" name="to" />
-                </div>
-                <div class="form-group">
-                  <p><input type="checkbox" name="current" value="" /> Current Job</p>
-                </div>
+
                 <div class="form-group">
                   <textarea
                     name="description"
                     cols="30"
                     rows="5"
-                    placeholder="Job Description"
+                    placeholder="Books List Description"
                   ></textarea>
                 </div>
                 <input type="submit" class="btn btn-primary my-1" />
