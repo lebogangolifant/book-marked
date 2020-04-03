@@ -10,6 +10,64 @@
     <!-- font awesome kit -->
     <script src="https://kit.fontawesome.com/bcdb4329ce.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Spartan&display=swap" rel="stylesheet">
+    <style>
+        /* Popup container - can be anything you want */
+        .popup {
+          position: relative;
+          display: inline-block;
+          cursor: pointer;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+        
+        /* The actual popup */
+        .popup .popuptext {
+          visibility: hidden;
+          width: 300px;
+          background-color: #000;
+          color: #fff;
+          text-align: center;
+          border-radius: 6px;
+          padding: 8px 0;
+          position: absolute;
+          z-index: 1;
+          bottom: 125%;
+          left: 50%;
+          margin-left: -80px;
+        }
+        
+        /* Popup arrow */
+        .popup .popuptext::after {
+          content: "";
+          position: absolute;
+          top: 100%;
+          left: 50%;
+          margin-left: -5px;
+          border-width: 5px;
+          border-style: solid;
+          border-color: #555 transparent transparent transparent;
+        }
+        
+        /* Toggle this class - hide and show the popup */
+        .popup .show {
+          visibility: visible;
+          -webkit-animation: fadeIn 1s;
+          animation: fadeIn 2s;
+        }
+        
+        /* Add animation (fade in the popup) */
+        @-webkit-keyframes fadeIn {
+          from {opacity: 0;} 
+          to {opacity: 1;}
+        }
+        
+        @keyframes fadeIn {
+          from {opacity: 0;}
+          to {opacity:1 ;}
+        }
+        </style>
 </head>
 
 <body>
@@ -98,7 +156,10 @@
             <h2>T'Challa</h2>
             <p>@black_panther</p>
             <p> <i class="fa fa-map-marker"> </i> Wakanda</p>
-            <a href="users.html" class="btn btn-primary">view profile</a>
+            <div class="popup" onclick="myFunction()">
+            <a href="" class="btn btn-primary"> view profile</a>
+            <span class="popuptext" id="myPopup">login to view profile!</span>
+            </div>
             </div>
        
         <ul>
@@ -120,6 +181,13 @@
          
     </section>
         <!-- end of page content container -->
+        <script>
+            // When the user clicks on div, open the popup
+            function myFunction() {
+              var popup = document.getElementById("myPopup");
+              popup.classList.toggle("show");
+            }
+            </script>
 </body>
 
 </html>
